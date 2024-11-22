@@ -1,9 +1,7 @@
 function isEnoughCapacity(products, containerSize) {
   let totalSum = 0;
   for (let key in products) {
-    if (typeof products[key] === `number`) {
-      totalSum += products[key];
-    }
+    totalSum += products[key];
   }
   return totalSum <= containerSize;
 }
